@@ -1,9 +1,9 @@
-    <div style="text-align:center; ">
+    <div style="text-align:center; margin: 10px 20px;">
 <h1>
     YouTrip
   </h1>
     </div>
-        <div style="width: 100%; margin-left: 1px" class="row">
+        <div style="width: 100%; margin: 10px 0px;" class="row">
             <div class="card col-sm-3" style=" box-sizing: border-box;
 height:600px;
 width: 100%;
@@ -11,14 +11,16 @@ padding: 3px;
 border: 1px solid black;
 background-size: 100% 100%;text-align: center; color:white; margin-bottom: 10px " [ngStyle]="{'background-image': 'url(' + myth[4] + ')'}"*ngFor="let myth of myths">
             <div class="card-body" *ngIf="myth[3] == false">
-                <p class="card-text" style="margin-top: 200px;">{{ myth[1] }}</p>
+                <p class="card-text" style="margin-top: 200px; font-size: 30px; font-family: 'Playfair Display', serif;
+">{{ myth[1] }}</p>
                 <br>                
                 <br>
                 <a class="btn btn-success" (click)="myth[3] = true">Debunk the Myth!</a>
             </div>
 
             <div class="card-body" *ngIf="myth[3] == true">
-                <p class="card-text" style="margin-top: 200px;">{{ myth[2] }}</p>
+                <p class="card-text" style="margin-top: 200px;font-size: 20px; font-family: 'Playfair Display', serif;
+">{{ myth[2] }}</p>
                 <br>                
                 <br>
                 <a class="btn btn-danger" (click)="myth[3] = false">Back</a>
