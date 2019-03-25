@@ -1,33 +1,33 @@
-    <div style="text-align:center; margin: 10px 20px;">
-<h1>
+<div style="text-align:center; margin: 10px 20px;">
+    <h1>
     YouTrip
   </h1>
-    </div>
-        <div style="width: 100%; margin: 10px 0px;" class="row">
-            <div class="card col-sm-3" style=" box-sizing: border-box;
-height:600px;
+</div>
+<div style="width: 100%; margin: 10px 0px;" class="row">
+    <div class="card col-sm-3" style=" box-sizing: border-box;
 width: 100%;
 padding: 3px;
 border: 1px solid black;
-background-size: 100% 100%;text-align: center; color:white; margin-bottom: 10px " [ngStyle]="{'background-image': 'url(' + myth[4] + ')'}"*ngFor="let myth of myths">
-            <div class="card-body" *ngIf="myth[3] == false" style="height:600px;">
+background-size: 100% 100%;text-align: center; color:white; margin-bottom: 10px " [ngStyle]="{'background-image': 'url(' + myth[4] + ')'}" *ngFor="let myth of myths">
+        <div class="card-body" *ngIf="myth[3] == false">
+            <div style="height:400px;">
                 <p class="card-text" style="margin-top: 200px; font-size: 30px; font-family: 'Impact', sans-serif;
 ">{{ myth[1] }}</p>
-                <br>                
-                <br>
-                <a class="btn btn-success" style="background-color: #28cdac !important;" (click)="myth[3] = true">Debunk the Myth!</a>
             </div>
+            <a class="btn btn-success" style="background-color: #28cdac !important; border-radius: 20px !important; padding: 10px 20px;" (click)="myth[3] = true">Debunk the Myth!</a>
+        </div>
 
-            <div class="card-body" *ngIf="myth[3] == true" style="height:600px;">
+        <div class="card-body" *ngIf="myth[3] == true">
+
+            <div style="height:400px;">
                 <p class="card-text" style="margin-top: 150px; font-size: 30px; font-family: 'Impact', sans-serif;
-
 ">{{ myth[1] }}</p>
                 <p class="card-text" style="margin-top: 30px;font-size: 20px; font-family: 'Raleway', serif;
 ">{{ myth[2] }}</p>
-                <br>                
-                <br>
-                <a class="btn btn-danger" (click)="myth[3] = false">Back</a>
             </div>
+            <a class="btn btn-danger" style="border-radius: 20px !important; padding: 10px 20px;" (click)="myth[3] = false">Back</a>
         </div>
+
     </div>
+</div>
 <router-outlet></router-outlet>
