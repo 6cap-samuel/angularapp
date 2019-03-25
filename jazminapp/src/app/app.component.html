@@ -4,11 +4,11 @@
   </h1>
 </div>
 <div style="width: 100%; margin: 10px 0px;" class="row">
-    <div class="card col-sm-3" style=" box-sizing: border-box;
+         <div class="card col-sm-3" style=" box-sizing: border-box;
 width: 100%;
 padding: 3px;
 border: 1px solid black;
-background-size: 100% 100%;text-align: center; color:white; margin-bottom: 10px " [ngStyle]="{'background-image': 'url(' + myth[4] + ')'}" *ngFor="let myth of myths">
+background-size: 100% 100%;text-align: center; color:white; margin-bottom: 10px;" [ngStyle]="{'background-image': 'url(' + myth[4] + ')'}" *ngFor="let myth of myths">
         <div class="card-body" *ngIf="myth[3] == false">
             <div style="height:350px;">
                 <p class="card-text" style="margin-top: 200px; font-size: 30px; font-family: 'Impact', sans-serif;
@@ -29,5 +29,7 @@ background-size: 100% 100%;text-align: center; color:white; margin-bottom: 10px 
         </div>
 
     </div>
+
+   
 </div>
 <router-outlet></router-outlet>

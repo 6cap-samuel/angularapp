@@ -15,5 +15,4 @@ export class AppComponent {
   myth4 = ['Myth 4', 'Applying for a multi-currency wallet is difficult.', 'Just download the YouTrip app, sign up, and receive the card in 7-10 days. The best part? It\'s FREE.', false, '/assets/img/main_4.jpg'];
 
   myths = [this.myth1, this.myth2, this.myth3, this.myth4];
-
 }
